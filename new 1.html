@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SA TRENDING HITS</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #E91E63;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      background: #222;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .song {
+      background: #1e1e1e;
+      margin: 1rem 0;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+
+    .song h3 {
+      margin: 0;
+    }
+
+    .upload-form {
+      background: #1e1e1e;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+
+    input[type="text"], input[type="file"] {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      background: #E91E63;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #222;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SA TRENDING HITS</h1>
+    <p>Your #1 Spot for the Latest South African Music</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#downloads">Downloads</a>
+    <a href="#upload">Upload</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="downloads">
+      <h2>Latest Downloads</h2>
+
+      <div class="song">
+        <h3>YoungstaCPT - VOC (Voice of the Cape)</h3>
+        <a href="music/voc.mp3" download>Download</a>
+      </div>
+
+      <div class="song">
+        <h3>DJ Maphorisa - Midnight Prayer</h3>
+        <a href="music/midnight-prayer.mp3" download>Download</a>
+      </div>
+
+      <!-- Add more songs as needed -->
+    </section>
+
+    <section id="upload" class="upload-form">
+      <h2>Upload Your Music</h2>
+      <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="artist">Artist Name:</label>
+        <input type="text" id="artist" name="artist" required>
+
+        <label for="title">Song Title:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="file">Choose MP3 File:</label>
+        <input type="file" id="file" name="file" accept=".mp3" required>
+
+        <input type="submit" value="Upload">
+      </form>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>Contact us at <a href="mailto:satrendinghits@example.com" style="color:#E91E63;">satrendinghits@example.com</a></p>
+    <p>&copy; 2025 SA Trending Hits. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
